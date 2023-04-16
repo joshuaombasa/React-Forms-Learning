@@ -53,7 +53,16 @@ function App() {
           placeholder='Comments...'
           value={FormData.comments}
           cols="30"
-          rows="10"></textarea>
+          rows="10" />
+        {/* <fieldset>
+          <legend>Career field:</legend>
+
+          <input 
+          type="radio" 
+          name="" 
+          id="site-reliability-engineer" />
+          <label htmlFor="site-reliability-engineer">Site Realiability Engineer</label>
+        </fieldset> */}
       </form>
     </div>
   )
