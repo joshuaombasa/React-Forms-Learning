@@ -10,7 +10,7 @@ function App() {
       lastName: "",
       email: "",
       comments: "",
-      isGraduated: ""
+      isGraduated: true
 
     }
   )
@@ -59,9 +59,10 @@ function App() {
           rows="10" />
         <input 
            type="checkbox" 
+           value={formData.isGraduated}
            id='isGraduated'
            /> 
-           <label htmlFor="">Graduated ?</label> 
+           <label htmlFor="isGraduated">Graduated ?</label> 
 
         {/* <fieldset>
           <legend>Career field:</legend>
