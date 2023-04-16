@@ -1,0 +1,18 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.test-form {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  border: 1px solid rgb(94, 78, 78);
+}
+
+.test-form input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+}
