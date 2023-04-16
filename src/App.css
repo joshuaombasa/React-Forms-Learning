@@ -16,3 +16,14 @@
   padding: 10px;
   margin: 10px;
 }
+
+.test-form input[type="email"] {
+  width: 400px;
+  padding: 10px;
+  margin: 10px;
+}
+
+textarea {
+  width: 400px;
+  margin: 10px;
+}
