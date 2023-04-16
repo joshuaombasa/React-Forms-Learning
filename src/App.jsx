@@ -10,7 +10,7 @@ function App() {
       lastName: "",
       email: "",
       comments: "",
-      isGraduated: true
+      isGraduated: ""
 
     }
   )
@@ -20,7 +20,7 @@ function App() {
     setFormData(prevFormData => {
       return {
         ...prevFormData,
-        [name]: event.target.value
+        [name]: value
       }
     })
     console.log(formData)
@@ -59,8 +59,9 @@ function App() {
           rows="10" />
         <input 
            type="checkbox" 
-           value={formData.isGraduated}
+           checked={formData.isGraduated}
            id='isGraduated'
+           onChange={console.log("Changed")}
            /> 
            <label htmlFor="isGraduated">Graduated ?</label> 
 
