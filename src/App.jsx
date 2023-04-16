@@ -11,7 +11,13 @@ function App() {
   )
 
   function handleChange(event) {
-    console.log(event.target.value)
+    setFormData(prevFormData => {
+      return {
+        ...prevFormData,
+        [event.target.name]: event.target.value
+      }
+    }) 
+    console.log(formData)
   }
 
   return (
@@ -22,12 +28,14 @@ function App() {
             placeholder='First Name'
             onChange={handleChange}
             value={formData.firstName}
+            name="firstName"
         />
         <input 
             type="text" 
             onChange={handleChange}
             placeholder='Last Name'
             value={FormData.lastName}
+            name="lastName"
         />
       </form>
     </div>
