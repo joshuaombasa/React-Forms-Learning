@@ -6,7 +6,8 @@ import './App.css'
 function App() {
  const [formData, setFormData] = React.useState(
   {firstName: "", 
-   lastName: ""
+   lastName: "",
+   email: ""
 }
   )
 
@@ -36,6 +37,13 @@ function App() {
             placeholder='Last Name'
             value={FormData.lastName}
             name="lastName"
+        />
+        <input 
+            type="email" 
+            onChange={handleChange}
+            placeholder='Email'
+            value={FormData.email}
+            name="email"
         />
       </form>
     </div>
