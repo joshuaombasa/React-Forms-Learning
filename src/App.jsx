@@ -9,15 +9,18 @@ function App() {
       firstName: "",
       lastName: "",
       email: "",
-      comments: ""
+      comments: "",
+      isGraduated: ""
+
     }
   )
 
   function handleChange(event) {
+    const {name, type, value, checked} = event.target
     setFormData(prevFormData => {
       return {
         ...prevFormData,
-        [event.target.name]: event.target.value
+        [name]: event.target.value
       }
     })
     console.log(formData)
@@ -54,6 +57,12 @@ function App() {
           value={FormData.comments}
           cols="30"
           rows="10" />
+        <input 
+           type="checkbox" 
+           id='isGraduated'
+           /> 
+           <label htmlFor="">Graduated ?</label> 
+
         {/* <fieldset>
           <legend>Career field:</legend>
 
