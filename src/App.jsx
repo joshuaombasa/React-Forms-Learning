@@ -78,6 +78,7 @@ function App() {
           name="employed" 
           id="site-reliability-engineer" 
           value='site-reliability-engineer'
+          checked={formData.employed === 'site-reliability-engineer'}
           onChange={handleChange}
           />
           <label htmlFor="site-reliability-engineer">Site Realiability Engineer</label>
@@ -85,6 +86,7 @@ function App() {
           type="radio" 
           name="employed" 
           id="site-reliability-engineer" 
+          checked={formData.employed === 'mpesa-engineer'}
           value='mpesa-engineer'
           onChange={handleChange}
           />
@@ -93,6 +95,7 @@ function App() {
           type="radio" 
           name="employed" 
           id="site-reliability-engineer" 
+          checked={formData.employed === 'rnap-engineer'}
           value='rnap-engineer'
           onChange={handleChange}
           />
