@@ -20,7 +20,7 @@ function App() {
     setFormData(prevFormData => {
       return {
         ...prevFormData,
-        [name]: value
+        [name]: type === 'checkbox' ? checked : value
       }
     })
     console.log(formData)
@@ -61,7 +61,8 @@ function App() {
            type="checkbox" 
            checked={formData.isGraduated}
            id='isGraduated'
-           onChange={console.log("Changed")}
+           onChange={handleChange}
+           name='isGraduated'
            /> 
            <label htmlFor="isGraduated">Graduated ?</label> 
 
