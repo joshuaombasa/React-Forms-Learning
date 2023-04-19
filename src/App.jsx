@@ -10,7 +10,7 @@ function App() {
       lastName: "",
       email: "",
       comments: "",
-      isGraduated: ""
+      isGraduated: true
 
     }
   )
