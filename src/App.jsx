@@ -10,10 +10,13 @@ function App() {
       lastName: "",
       email: "",
       comments: "",
-      isGraduated: true
+      isGraduated: true,
+      employed: ''
 
     }
   )
+
+  console.log(formData.employed)
 
   function handleChange(event) {
     const {name, type, value, checked} = event.target
@@ -23,8 +26,10 @@ function App() {
         [name]: type === 'checkbox' ? checked : value
       }
     })
-    console.log(formData)
+    
   }
+
+  
 
   return (
     <div className="App">
@@ -66,15 +71,33 @@ function App() {
            /> 
            <label htmlFor="isGraduated">Graduated ?</label> 
 
-        {/* <fieldset>
+        <fieldset>
           <legend>Career field:</legend>
-
           <input 
           type="radio" 
-          name="" 
-          id="site-reliability-engineer" />
+          name="employed" 
+          id="site-reliability-engineer" 
+          value='site-reliability-engineer'
+          onChange={handleChange}
+          />
           <label htmlFor="site-reliability-engineer">Site Realiability Engineer</label>
-        </fieldset> */}
+          <input 
+          type="radio" 
+          name="employed" 
+          id="site-reliability-engineer" 
+          value='mpesa-engineer'
+          onChange={handleChange}
+          />
+          <label htmlFor="mpesa-engineer">MPESA Engineer</label>
+          <input 
+          type="radio" 
+          name="employed" 
+          id="site-reliability-engineer" 
+          value='rnap-engineer'
+          onChange={handleChange}
+          />
+          <label htmlFor="rnap-engineer">RNAP Engineer</label>
+        </fieldset>
       </form>
     </div>
   )
