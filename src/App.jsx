@@ -30,11 +30,16 @@ function App() {
     
   }
 
+
+  function handleSubmit() {
+    
+  }
+
   
 
   return (
     <div className="App">
-      <form action="" className='test-form'>
+      <form action="" className='test-form' onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder='First Name'
