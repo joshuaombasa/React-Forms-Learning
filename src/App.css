@@ -1,5 +1,5 @@
 #root {
-  max-width: 1280px;
+  max-width: 550px;
   margin: 0 auto;
   text-align: center;
 }
@@ -8,23 +8,24 @@
   display: flex;
   flex-direction: column;
   font-size: 18px;
-  border: 1px solid rgb(94, 78, 78);
+  
 }
 
 .test-form input[type="text"] {
-  width: 300px;
+  width: 100%;
   padding: 10px;
   margin: 10px;
 }
 
 .test-form input[type="email"] {
-  width: 400px;
+  width:100%;
   padding: 10px;
   margin: 10px;
 }
 
 textarea {
-  width: 400px;
+  width: 100%;
+  padding: 10px;
   margin: 10px;
 }
 
@@ -36,11 +37,21 @@ fieldset {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
 }
 
 .favourite-employer {
   width: 200px;
   margin: 10px 0;
   padding: 10px;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  color: whitesmoke;
+  background-color: rgb(103, 97, 97);
+  font-size: 20px;
   font-weight: bold;
 }

@@ -117,6 +117,8 @@ function App() {
           <option value="Jubilee Insurance">Jubilee Insurance</option>
           <option value="Andela">Andela</option>
         </select>
+
+        <button>Submit</button>
       </form>
     </div>
   )
