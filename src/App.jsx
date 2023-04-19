@@ -103,11 +103,11 @@ function App() {
         </fieldset>
 
         <select name="" id="favourite-employer" className='favourite-employer'>
-          <option value="">Safaricom</option>
-          <option value="">Kenya Revenue Authority</option>
-          <option value="">Kenya Commercial Bank</option>
-          <option value="">Jubilee Insurance</option>
-          <option value="">Andela</option>
+          <option value="Safaricom">Safaricom</option>
+          <option value="Kenya Revenue Authority">Kenya Revenue Authority</option>
+          <option value="Kenya Commercial Bank">Kenya Commercial Bank</option>
+          <option value="Jubilee Insurance">Jubilee Insurance</option>
+          <option value="Andela">Andela</option>
         </select>
       </form>
     </div>
