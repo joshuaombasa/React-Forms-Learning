@@ -31,8 +31,8 @@ function App() {
   }
 
 
-  function handleSubmit() {
-    
+  function handleSubmit(event) {
+    event.preventDefault()
   }
 
   
