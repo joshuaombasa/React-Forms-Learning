@@ -11,12 +11,13 @@ function App() {
       email: "",
       comments: "",
       isGraduated: true,
-      employed: ''
+      employed: '',
+      favEmployer: ''
 
     }
   )
 
-  console.log(formData.employed)
+  console.log(formData.favEmployer)
 
   function handleChange(event) {
     const {name, type, value, checked} = event.target
@@ -102,7 +103,13 @@ function App() {
           <label htmlFor="rnap-engineer">RNAP Engineer</label>
         </fieldset>
 
-        <select name="" id="favourite-employer" className='favourite-employer'>
+        <select 
+        id="favourite-employer" 
+        className='favourite-employer'
+        value={formData.favEmployer}
+        name='favEmployer'
+        onChange={handleChange}
+        >
           <option value="Safaricom">Safaricom</option>
           <option value="Kenya Revenue Authority">Kenya Revenue Authority</option>
           <option value="Kenya Commercial Bank">Kenya Commercial Bank</option>
