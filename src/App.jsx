@@ -101,6 +101,14 @@ function App() {
           />
           <label htmlFor="rnap-engineer">RNAP Engineer</label>
         </fieldset>
+
+        <select name="" id="favourite-employer" className='favourite-employer'>
+          <option value="">Safaricom</option>
+          <option value="">Kenya Revenue Authority</option>
+          <option value="">Kenya Commercial Bank</option>
+          <option value="">Jubilee Insurance</option>
+          <option value="">Andela</option>
+        </select>
       </form>
     </div>
   )
