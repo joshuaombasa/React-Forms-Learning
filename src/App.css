@@ -27,3 +27,7 @@ textarea {
   width: 400px;
   margin: 10px;
 }
+
+input [type="checkbox"] {
+  align-self: flex-start;
+}
