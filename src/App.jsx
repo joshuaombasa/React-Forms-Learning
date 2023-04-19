@@ -102,7 +102,7 @@ function App() {
           />
           <label htmlFor="rnap-engineer">RNAP Engineer</label>
         </fieldset>
-        <label htmlFor="favourite-employer"></label>
+        <label htmlFor="favourite-employer">Choose favourite employer in Kenya</label>
         <select 
         id="favourite-employer" 
         className='favourite-employer'
