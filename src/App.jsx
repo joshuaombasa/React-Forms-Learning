@@ -102,7 +102,7 @@ function App() {
           />
           <label htmlFor="rnap-engineer">RNAP Engineer</label>
         </fieldset>
-
+        <label htmlFor="favourite-employer"></label>
         <select 
         id="favourite-employer" 
         className='favourite-employer'
@@ -110,6 +110,7 @@ function App() {
         name='favEmployer'
         onChange={handleChange}
         >
+          <option value="">---choose---</option>
           <option value="Safaricom">Safaricom</option>
           <option value="Kenya Revenue Authority">Kenya Revenue Authority</option>
           <option value="Kenya Commercial Bank">Kenya Commercial Bank</option>
